@@ -35,31 +35,38 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		FF884FD92F9592E6007F4D13 /* Exceptions for "StreamingApp" folder in "StreamingApp" target */ = {
+		D109174B2F9BDEC200239995 /* Exceptions for "StreamingApp" folder in "StreamingApp" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				.swiftlint.yml,
+				StreamingApp.xcdatamodeld,
 			);
 			target = FF884F9C2F958F5D007F4D13 /* StreamingApp */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
-		FF884FDA2F9592E6007F4D13 /* Exceptions for "StreamingApp" folder in "Compile Sources" phase from "StreamingApp" target */ = {
+		D109174C2F9BDEC200239995 /* Exceptions for "StreamingApp" folder in "Compile Sources" phase from "StreamingApp" target */ = {
 			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
 			buildPhase = FF884F992F958F5D007F4D13 /* Sources */;
 			membershipExceptions = (
 				.swiftlint.yml,
+				StreamingApp.xcdatamodeld,
 			);
 		};
 /* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		FF884F9F2F958F5D007F4D13 /* StreamingApp */ = {
+		D10917112F9BDE2100239995 /* Layers */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Layers;
+			sourceTree = "<group>";
+		};
+		D10917432F9BDEC200239995 /* StreamingApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				FF884FD92F9592E6007F4D13 /* Exceptions for "StreamingApp" folder in "StreamingApp" target */,
-				FF884FDA2F9592E6007F4D13 /* Exceptions for "StreamingApp" folder in "Compile Sources" phase from "StreamingApp" target */,
+				D109174B2F9BDEC200239995 /* Exceptions for "StreamingApp" folder in "StreamingApp" target */,
+				D109174C2F9BDEC200239995 /* Exceptions for "StreamingApp" folder in "Compile Sources" phase from "StreamingApp" target */,
 			);
 			path = StreamingApp;
 			sourceTree = "<group>";
@@ -126,8 +133,9 @@
 		FF884F942F958F5D007F4D13 = {
 			isa = PBXGroup;
 			children = (
+				D10917432F9BDEC200239995 /* StreamingApp */,
+				D10917112F9BDE2100239995 /* Layers */,
 				FFA6AACA2F9A089500F5D41B /* Layers */,
-				FF884F9F2F958F5D007F4D13 /* StreamingApp */,
 				FF884FB52F958F5F007F4D13 /* StreamingAppTests */,
 				FF884FBF2F958F5F007F4D13 /* StreamingAppUITests */,
 				FF884F9E2F958F5D007F4D13 /* Products */,
@@ -172,7 +180,8 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				FF884F9F2F958F5D007F4D13 /* StreamingApp */,
+				D10917112F9BDE2100239995 /* Layers */,
+				D10917432F9BDEC200239995 /* StreamingApp */,
 			);
 			name = StreamingApp;
 			packageProductDependencies = (
