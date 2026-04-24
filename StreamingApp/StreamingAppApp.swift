@@ -10,11 +10,11 @@ import SwiftUI
 @main
 struct StreamingAppApp: App {
     let persistenceController = PersistenceController.shared
-
+    @StateObject var appCoordinator : AppCoordinator = AppCoordinator()
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            RootView()
+                .environmentObject(appCoordinator)
         }
     }
 }

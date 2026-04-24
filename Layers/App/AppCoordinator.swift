@@ -8,12 +8,13 @@
 import Foundation
 final class AppCoordinator: ObservableObject {
     enum Route {
+            case splash
             case onboarding
             case legal
             case auth
             case main
         }
-@Published var currentRoute: Route = .onboarding
+@Published var currentRoute: Route = .splash
     
    var isFirstLaunch : Bool {
         !UserDefaults.standard.bool(forKey: "isFirstLaunch")
