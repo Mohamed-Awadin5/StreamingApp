@@ -33,5 +33,17 @@ final class AppCoordinator: ObservableObject {
             currentRoute = .auth
         }
     }
+    func onBoardingFinished() {
+        currentRoute = .legal
+    }
+    func legalAccepted() {
+        UserDefaults.standard.set(true, forKey: "hasLaunchedBefore")
+        if isLoggedIn {
+                   currentRoute = .main
+               } else {
+                   currentRoute = .auth
+               }
+
+    }
     
 }

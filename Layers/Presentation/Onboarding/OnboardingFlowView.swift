@@ -7,7 +7,6 @@
 
 import Foundation
 import SwiftUI
-import SwiftUI
 
 struct OnboardingFlowView: View {
 
@@ -19,7 +18,6 @@ struct OnboardingFlowView: View {
 
         NavigationStack(path: $coordinator.path) {
 
-            // 👇 أول شاشة (root)
             OnboardingScreen1 {
                 coordinator.next(from: 1)
             }
