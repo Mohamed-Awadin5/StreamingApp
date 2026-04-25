@@ -50,9 +50,24 @@
 			path = StreamingAppUITests;
 			sourceTree = "<group>";
 		};
-		FFB8C8BD2F9D1A4400331AE7 /* Layers Arch */ = {
+		FFB8C8D72F9D23B100331AE7 /* core */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Layers Arch";
+			path = core;
+			sourceTree = "<group>";
+		};
+		FFB8C8D82F9D23D300331AE7 /* Data */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Data;
+			sourceTree = "<group>";
+		};
+		FFB8C8D92F9D23E400331AE7 /* Domain */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		FFB8C8DA2F9D23FB00331AE7 /* Presentation */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -87,7 +102,10 @@
 		FF884F942F958F5D007F4D13 = {
 			isa = PBXGroup;
 			children = (
-				FFB8C8BD2F9D1A4400331AE7 /* Layers Arch */,
+				FFB8C8DA2F9D23FB00331AE7 /* Presentation */,
+				FFB8C8D92F9D23E400331AE7 /* Domain */,
+				FFB8C8D82F9D23D300331AE7 /* Data */,
+				FFB8C8D72F9D23B100331AE7 /* core */,
 				FF884F9F2F958F5D007F4D13 /* StreamingApp */,
 				FF884FB52F958F5F007F4D13 /* StreamingAppTests */,
 				FF884FBF2F958F5F007F4D13 /* StreamingAppUITests */,
@@ -123,6 +141,10 @@
 			);
 			fileSystemSynchronizedGroups = (
 				FF884F9F2F958F5D007F4D13 /* StreamingApp */,
+				FFB8C8D72F9D23B100331AE7 /* core */,
+				FFB8C8D82F9D23D300331AE7 /* Data */,
+				FFB8C8D92F9D23E400331AE7 /* Domain */,
+				FFB8C8DA2F9D23FB00331AE7 /* Presentation */,
 			);
 			name = StreamingApp;
 			packageProductDependencies = (
