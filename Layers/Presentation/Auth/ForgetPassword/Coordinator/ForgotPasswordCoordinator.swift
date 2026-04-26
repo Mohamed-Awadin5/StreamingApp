@@ -17,16 +17,9 @@ final class ForgotPasswordCoordinator: BaseCoordinator<ForgotPasswordCoordinator
       var onFinish: (() -> Void)?
       
     
-      
-      func submitEmail(_ email: String) {
-          push(.otp(email: email))
-      }
-      
-      func verifyOTP() {
-          push(.newPassword)
-      }
-      
-      func resetDone() {
-          onFinish?()
-      }
+    var pushRoute: ((Route) -> Void)?
+
+    func submitEmail(_ email: String) { pushRoute?(.otp(email: email)) }
+    func verifyOTP()                  { pushRoute?(.newPassword) }
+    func resetDone()                  { onFinish?() }
 }

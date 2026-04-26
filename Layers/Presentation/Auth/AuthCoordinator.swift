@@ -23,11 +23,16 @@ final class AuthCoordinator: BaseCoordinator<AuthCoordinator.Route> {
      }
      
      private func setup() {
-         
+         signUpCoordinator.pushRoute = { [weak self] route in
+                     self?.path.append(route)
+                 }
+
          signUpCoordinator.onFinish = { [weak self] in
              self?.onAuthenticated?()
          }
-         
+         forgotCoordinator.pushRoute = { [weak self] route in
+                    self?.path.append(route)
+                }
          forgotCoordinator.onFinish = { [weak self] in
              self?.pop()
          }

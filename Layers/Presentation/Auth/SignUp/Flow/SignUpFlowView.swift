@@ -18,28 +18,8 @@ struct SignUpFlowView: View {
             CreateProfileView {
                 coordinator.goToPIN()
             }
-            
-            .navigationDestination(for: SignUpCoordinator.Route.self) { route in
-                
-                switch route {
-                    
-                case .createPIN:
-                    CreatePINView {
-                        coordinator.goToWelcome()
-                    }
-                    
-                case .interests:
-                    InterestsView {
-                        coordinator.finish()
-                    }
-                    
-              
-                case .welcome:
-                    WelcomeView{
-                        coordinator.goToInterests()
-                    }
-                }
+          
             }
         }
-    }
+    
 

@@ -18,20 +18,11 @@ final class SignUpCoordinator: BaseCoordinator<SignUpCoordinator.Route> {
        
        var onFinish: (() -> Void)?
        
-    
-              func goToPIN() {
-           push(.createPIN)
-       }
-       
-       func goToWelcome() {
-           push(.welcome)
-       }
-       
-       func goToInterests() {
-           push(.interests)
-       }
-       
-       func finish() {
-           onFinish?()
-       }
+
+    var pushRoute: ((Route) -> Void)?
+
+      func goToPIN()       { pushRoute?(.createPIN) }
+      func goToWelcome()   { pushRoute?(.welcome) }
+      func goToInterests() { pushRoute?(.interests) }
+    func finish()        { onFinish?()}
 }
