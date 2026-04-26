@@ -15,35 +15,47 @@ final class AppCoordinator: ObservableObject {
             case main
         }
 @Published var currentRoute: Route = .splash
-    
-   var isFirstLaunch : Bool {
-        !UserDefaults.standard.bool(forKey: "isFirstLaunch")
-    }
-   var isLoggedIn : Bool {
-        UserDefaults.standard.string(forKey: "isToken") != nil
-    }
-    func start() {
-        if isFirstLaunch {
+    let onboardingCoordinator = OnboardingCoordinator()
+    let legalCoordinator = LegalCoordinator()
+     let authCoordinator = AuthCoordinator()
+    // let mainCoordinator = MainCoordinator()
+    init() {
+          setupCallbacks()
+      }
+      
+      private func setupCallbacks() {
+          
+          onboardingCoordinator.onFinish = { [weak self] in
+              self?.currentRoute = .legal
+          }
+          
+          legalCoordinator.onAccept = { [weak self] in
+              self?.currentRoute = .auth
+          }
+          
+          authCoordinator.onAuthenticated = { [weak self] in
+              self?.currentRoute = .main
+          }
+          
+//          mainCoordinator.onLogout = { [weak self] in
+//              self?.currentRoute = .auth
+//          }
+      }
+    func routeAfterSplash() {
+        
+        let isFirstLaunch = true   // replace later
+        let isLoggedIn = false     // replace later
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
             
-            currentRoute = .onboarding
-            UserDefaults.standard.set(false, forKey: "isFirstLaunch")// eill be true after finishing onboarding screens
-        } else if isLoggedIn {
-            currentRoute = .main
-        } else {
-            currentRoute = .auth
+            if isFirstLaunch {
+                self.currentRoute = .onboarding
+            } else if isLoggedIn {
+                self.currentRoute = .main
+            } else {
+                self.currentRoute = .auth
+            }
         }
-    }
-    func onBoardingFinished() {
-        currentRoute = .legal
-    }
-    func legalAccepted() {
-        UserDefaults.standard.set(true, forKey: "hasLaunchedBefore")
-        if isLoggedIn {
-                   currentRoute = .main
-               } else {
-                   currentRoute = .auth
-               }
-
     }
     
 }

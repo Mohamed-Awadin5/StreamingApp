@@ -10,9 +10,8 @@ import SwiftUI
 
 struct OnboardingFlowView: View {
 
-    @StateObject private var coordinator = OnboardingCoordinator()
+    @ObservedObject var coordinator: OnboardingCoordinator
 
-    var onFinish: () -> Void
 
     var body: some View {
 
@@ -36,11 +35,6 @@ struct OnboardingFlowView: View {
                         coordinator.next(from: 3)
                     }
 
-                case .finish:
-                    Text("Done")
-                        .onAppear {
-                            onFinish()
-                        }
                 }
             }
         }

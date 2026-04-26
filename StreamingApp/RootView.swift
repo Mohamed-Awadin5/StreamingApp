@@ -20,17 +20,13 @@ struct RootView: View {
             SplashView()
 
         case .onboarding:
-            OnboardingFlowView {
-                appCoordinator.onBoardingFinished()
-                      }
+            OnboardingFlowView(coordinator: appCoordinator.onboardingCoordinator)
         case .auth:
-            SplashView()
+            AuthFlowView(coordinator: appCoordinator.authCoordinator)
         case .main:
-            SplashView()
+            SplashView()// will change it
         case .legal:
-            LegalView {
-                           appCoordinator.legalAccepted()
-                       }
+            LegalFlowView (coordinator: appCoordinator.legalCoordinator)
         }
     }
 }

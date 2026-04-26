@@ -12,8 +12,8 @@ final class OnboardingCoordinator: BaseCoordinator<OnboardingCoordinator.Route> 
     enum Route: Hashable {
         case page2
         case page3
-        case finish
     }
+    var onFinish: (() -> Void)?
 
     func next(from page: Int) {
 
@@ -26,14 +26,12 @@ final class OnboardingCoordinator: BaseCoordinator<OnboardingCoordinator.Route> 
             push(.page3)
 
         case 3:
-            push(.finish)
-
+            finish()
         default:
             break
         }
     }
-
-    func completeOnboarding() {
-        // callback later
-    }
+    private func finish() {
+            onFinish?()
+        }
 }

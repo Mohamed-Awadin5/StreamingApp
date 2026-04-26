@@ -39,7 +39,6 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				.swiftlint.yml,
-				StreamingApp.xcdatamodeld,
 			);
 			target = FF884F9C2F958F5D007F4D13 /* StreamingApp */;
 		};
@@ -51,7 +50,6 @@
 			buildPhase = FF884F992F958F5D007F4D13 /* Sources */;
 			membershipExceptions = (
 				.swiftlint.yml,
-				StreamingApp.xcdatamodeld,
 			);
 		};
 /* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */

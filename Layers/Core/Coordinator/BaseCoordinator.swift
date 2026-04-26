@@ -11,6 +11,7 @@ class BaseCoordinator<Route:Hashable>: Coordinator {
     @Published var path = NavigationPath()
 
     func push(_ route: Route) {
+
         path.append( route)
     }
     
