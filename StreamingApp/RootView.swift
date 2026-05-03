@@ -24,7 +24,7 @@ struct RootView: View {
         case .auth:
             AuthFlowView(coordinator: appCoordinator.authCoordinator)
         case .main:
-            SplashView()// will change it
+            MainTabView(coordinator: appCoordinator.mainCoordinator)
         case .legal:
             LegalFlowView (coordinator: appCoordinator.legalCoordinator)
         }
