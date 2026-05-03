@@ -16,7 +16,9 @@ struct MainTabView: View {
         
         TabView(selection: $coordinator.selectedTab) {
             
-            HomeFlowView(coordinator: coordinator.homeCoordinator)
+            HomeFlowView(coordinator: coordinator.homeCoordinator,  onSearchTap: {
+                coordinator.selectedTab = .search
+            })
                 .tabItem {
                     Label("Home", systemImage: "house")
                 }
