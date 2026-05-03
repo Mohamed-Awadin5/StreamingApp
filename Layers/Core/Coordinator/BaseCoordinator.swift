@@ -7,7 +7,7 @@
 
 import Foundation
 import SwiftUI
-class BaseCoordinator<Route:Hashable>: Coordinator {
+class BaseCoordinator<Route:Hashable>: Coordinator,ObservableObject {
     @Published var path = NavigationPath()
 
     func push(_ route: Route) {

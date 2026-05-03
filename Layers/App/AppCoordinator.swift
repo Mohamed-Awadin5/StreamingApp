@@ -18,7 +18,7 @@ final class AppCoordinator: ObservableObject {
     let onboardingCoordinator = OnboardingCoordinator()
     let legalCoordinator = LegalCoordinator()
      let authCoordinator = AuthCoordinator()
-    // let mainCoordinator = MainCoordinator()
+     let mainCoordinator = MainCoordinator()
     init() {
           setupCallbacks()
       }
@@ -37,9 +37,9 @@ final class AppCoordinator: ObservableObject {
               self?.currentRoute = .main
           }
           
-//          mainCoordinator.onLogout = { [weak self] in
-//              self?.currentRoute = .auth
-//          }
+          mainCoordinator.onLogout = { [weak self] in
+            self?.currentRoute = .auth
+         }
       }
     func routeAfterSplash() {
         
