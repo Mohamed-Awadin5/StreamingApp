@@ -79,26 +79,6 @@
 			path = StreamingAppUITests;
 			sourceTree = "<group>";
 		};
-		FFA6AACB2F9A08A500F5D41B /* Presentation */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Presentation;
-			sourceTree = "<group>";
-		};
-		FFA6AACC2F9A08B600F5D41B /* Data */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Data;
-			sourceTree = "<group>";
-		};
-		FFA6AACD2F9A08D700F5D41B /* Domain */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Domain;
-			sourceTree = "<group>";
-		};
-		FFAE46722F9ABF0C00B27D9A /* Core */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Core;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,7 +113,6 @@
 			children = (
 				D10917432F9BDEC200239995 /* StreamingApp */,
 				D10917112F9BDE2100239995 /* Layers */,
-				FFA6AACA2F9A089500F5D41B /* Layers */,
 				FF884FB52F958F5F007F4D13 /* StreamingAppTests */,
 				FF884FBF2F958F5F007F4D13 /* StreamingAppUITests */,
 				FF884F9E2F958F5D007F4D13 /* Products */,
@@ -148,17 +127,6 @@
 				FF884FBC2F958F5F007F4D13 /* StreamingAppUITests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		FFA6AACA2F9A089500F5D41B /* Layers */ = {
-			isa = PBXGroup;
-			children = (
-				FFAE46722F9ABF0C00B27D9A /* Core */,
-				FFA6AACD2F9A08D700F5D41B /* Domain */,
-				FFA6AACC2F9A08B600F5D41B /* Data */,
-				FFA6AACB2F9A08A500F5D41B /* Presentation */,
-			);
-			path = Layers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
