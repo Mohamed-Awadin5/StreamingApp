@@ -34,6 +34,7 @@
 		FF884FBC2F958F5F007F4D13 /* StreamingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StreamingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+<<<<<<< HEAD
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
 		D109174B2F9BDEC200239995 /* Exceptions for "StreamingApp" folder in "StreamingApp" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
@@ -55,6 +56,11 @@
 			exceptions = (
 				D109174B2F9BDEC200239995 /* Exceptions for "StreamingApp" folder in "StreamingApp" target */,
 			);
+=======
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		FF884F9F2F958F5D007F4D13 /* StreamingApp */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+>>>>>>> origin/main
 			path = StreamingApp;
 			sourceTree = "<group>";
 		};
@@ -68,6 +74,7 @@
 			path = StreamingAppUITests;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		FFA6AACB2F9A08A500F5D41B /* Presentation */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Presentation;
@@ -88,6 +95,8 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
+=======
+>>>>>>> origin/main
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,9 +129,13 @@
 		FF884F942F958F5D007F4D13 = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				D10917432F9BDEC200239995 /* StreamingApp */,
 				D10917112F9BDE2100239995 /* Layers */,
 				FFA6AACA2F9A089500F5D41B /* Layers */,
+=======
+				FF884F9F2F958F5D007F4D13 /* StreamingApp */,
+>>>>>>> origin/main
 				FF884FB52F958F5F007F4D13 /* StreamingAppTests */,
 				FF884FBF2F958F5F007F4D13 /* StreamingAppUITests */,
 				FF884F9E2F958F5D007F4D13 /* Products */,
@@ -139,6 +152,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		FFA6AACA2F9A089500F5D41B /* Layers */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +164,8 @@
 			path = Layers;
 			sourceTree = "<group>";
 		};
+=======
+>>>>>>> origin/main
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -167,8 +183,12 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+<<<<<<< HEAD
 				D10917112F9BDE2100239995 /* Layers */,
 				D10917432F9BDEC200239995 /* StreamingApp */,
+=======
+				FF884F9F2F958F5D007F4D13 /* StreamingApp */,
+>>>>>>> origin/main
 			);
 			name = StreamingApp;
 			packageProductDependencies = (
@@ -497,7 +517,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = projects.StreamingApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+<<<<<<< HEAD
 				SWIFT_EMIT_LOC_STRINGS = NO;
+=======
+				SWIFT_EMIT_LOC_STRINGS = YES;
+>>>>>>> origin/main
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -525,7 +549,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = projects.StreamingApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+<<<<<<< HEAD
 				SWIFT_EMIT_LOC_STRINGS = NO;
+=======
+				SWIFT_EMIT_LOC_STRINGS = YES;
+>>>>>>> origin/main
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
