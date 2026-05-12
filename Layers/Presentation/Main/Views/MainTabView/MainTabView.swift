@@ -1,10 +1,3 @@
-//
-//  MainTabView.swift
-//  StreamingApp
-//
-//  Created by Ayatullah Salah on 27/04/2026.
-//
-
 import Foundation
 import SwiftUI
 
@@ -22,7 +15,10 @@ struct MainTabView: View {
                     coordinator.selectedTab = .search
                 }
             )
-                .tag(MainCoordinator.Tab.home)
+            .tabItem {
+                Label("Home", systemImage: "house")
+            }
+            .tag(MainCoordinator.Tab.home)
             
             SearchFlowView(coordinator: coordinator.searchCoordinator)
                 .tabItem {
